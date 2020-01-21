@@ -9,6 +9,7 @@ import os
 import librosa
 import numpy as np
 import tensorflow as tf
+tf.compat.v1.disable_v2_behavior()
 
 from wavenet import WaveNetModel, mu_law_decode, mu_law_encode, audio_reader
 
